@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Semântica</title>
+    <style>
+        /* ---------- Estilo geral ---------- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ---------- Cabeçalho ---------- */
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- Conteúdo principal ---------- */
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        section {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        article:last-child {
+            border-bottom: none;
+        }
+
+        /* ---------- Barra lateral ---------- */
+        aside {
+            flex: 1;
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* ---------- Rodapé ---------- */
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Portal de Notícias</h1>
+        <nav>
+            <a href="#">Início</a> |
+            <a href="#">Esportes</a> |
+            <a href="#">Tecnologia</a> |
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Notícias Recentes</h2>
+
+            <article>
+                <h3>Avanços na Inteligência Artificial</h3>
+                <p>A tecnologia de IA está revolucionando o modo como trabalhamos e vivemos. Empresas do mundo todo
+                    investem em soluções inteligentes para o futuro.</p>
+            </article>
+
+            <article>
+                <h3>Campeonato Nacional de Futebol</h3>
+                <p>O time da capital garantiu o título após uma temporada emocionante, conquistando vitórias decisivas
+                    nas rodadas finais.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Destaques do Dia</h3>
+            <ul>
+                <li>Nova atualização de software</li>
+                <li>Previsão do tempo para o fim de semana</li>
+                <li>Entrevista exclusiva com desenvolvedor</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portal de Notícias — Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

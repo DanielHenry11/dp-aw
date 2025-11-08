@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: white;
+            margin-top: 150px;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .opcoes {
+            margin-top: 8px;
+        }
+
+        .opcoes label {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005f87;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Cadastro de Usuário</h1>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione...</option>
+            <option>SP</option>
+            <option>RJ</option>
+            <option>MG</option>
+            <option>RS</option>
+            <option>BA</option>
+            <option>PE</option>
+        </select>
+
+        <label>Gênero:</label>
+        <div class="opcoes">
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+            <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+            <label><input type="radio" name="genero" value="outro"> Outro</label>
+        </div>
+
+        <label>Interesses:</label>
+        <div class="opcoes">
+            <label><input type="checkbox" name="interesses" value="tecnologia"> Tecnologia</label>
+            <label><input type="checkbox" name="interesses" value="esportes"> Esportes</label>
+            <label><input type="checkbox" name="interesses" value="musica"> Música</label>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
